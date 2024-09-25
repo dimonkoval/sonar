@@ -32,11 +32,11 @@ jobs:
       - name: List files
         run: 'dir' 
         
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
 
-      - name: Clone another repository
-        run: git clone https://github.com/DevOps2-Fundamentals/java-app-dimonkoval.git
+      # - name: Clone another repository
+      #   run: git clone https://github.com/DevOps2-Fundamentals/java-app-dimonkoval.git
 
       - name: Install dependecies
         run: 'mvn compile'
