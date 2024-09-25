@@ -33,7 +33,7 @@ jobs:
         run: 'dir' 
         
       - name: Clone the project
-        run: git clone https://github.com/DevOps2-Fundamentals/java-app-dimonkoval.git 
+        run: git clone git@github.com:DevOps2-Fundamentals/java-app-dimonkoval.git
 
       - name: Install dependecies
         run: 'mvn compile'
