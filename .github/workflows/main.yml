@@ -12,7 +12,7 @@ jobs:
 
   my_first_job:
 
-    runs-on: self-hosted
+    runs-on: ubuntu latest
 
     steps:
     
