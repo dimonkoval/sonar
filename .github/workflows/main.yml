@@ -31,6 +31,9 @@ jobs:
 
       - name: List files
         run: 'dir' 
+        
+      - name: Clone the project
+        run: git clone https://github.com/DevOps2-Fundamentals/java-app-dimonkoval.git 
 
       - name: Install dependecies
         run: 'mvn compile'
@@ -39,6 +42,15 @@ jobs:
         run: 'mvn package -DskipTests'
 
       - name: Test app
-        run: 'mvn test'        
+        run: 'mvn test'
+
+      - name: Commit changes
+        run: |
+           git config --local user.name "GitHub Actions"
+           git config --local user.email "actions@github.com"
+           git add .
+           git commit -m "Automated update"
+           git push origin main
+ 
        
      
