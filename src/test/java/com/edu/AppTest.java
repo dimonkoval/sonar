@@ -3,6 +3,7 @@ package com.edu;
 import org.junit.Assert;
 import org.junit.Test;
 
+@SpringBootTest
 public class AppTest {
 
     @Test
