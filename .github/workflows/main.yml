@@ -47,13 +47,13 @@ jobs:
       - name: Test app
         run: 'mvn test'
 
-      - name: Commit changes
-        run: |
-           git config --local user.name "GitHub Actions"
-           git config --local user.email "actions@github.com"
-           git add .
-           git commit -m "Automated update"
-           git push origin main
+      # - name: Commit changes
+      #   run: |
+      #      git config --local user.name "GitHub Actions"
+      #      git config --local user.email "actions@github.com"
+      #      git add .
+      #      git commit -m "Automated update"
+      #      git push origin main
  
        
      
