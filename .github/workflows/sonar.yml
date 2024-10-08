@@ -59,4 +59,4 @@ jobs:
           # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_TOKEN: squ_8e2fcd1156f70a5ddcc931c5d0f40cc6dcc9b840
           SONAR_HOST_URL: http://localhost:9000 # Використовуємо локальний адрес для контейнера
-        run:  mvn -B verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.login=${{ secrets.SONAR_TOKEN }} -e # Додаємо -Dsonar.login
+        run:  mvn -B verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.login=squ_8e2fcd1156f70a5ddcc931c5d0f40cc6dcc9b840 -e # Додаємо -Dsonar.login
