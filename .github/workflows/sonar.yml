@@ -58,4 +58,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: http://localhost:9000 # Використовуємо локальний адрес для контейнера
-        run:  mvn -B verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.login=${{ secrets.SONAR_TOKEN }}  # Додаємо -Dsonar.login
+        run:  mvn -B verify sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.login=${{ secrets.SONAR_TOKEN }} -e # Додаємо -Dsonar.login
