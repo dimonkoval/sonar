@@ -15,7 +15,7 @@
     <description>simplecrud</description>
     <properties>
         <java.version>17</java.version>
-        <sonar.login>squ_c39e0fb26230c53728981e14ba7a52c4bc552e86</sonar.login>
+        <sonar.login>squ_8e2fcd1156f70a5ddcc931c5d0f40cc6dcc9b840</sonar.login>
     </properties>
     <dependencies>
         <dependency>
